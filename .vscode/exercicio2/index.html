@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <title>exercicio</title>
+</head>
+
+<body class="bg-[#EFE7D6] text-[#2A241C]" style="font-family: 'Work Sans', sans-serif;">
+
+    <header class="bg-[#EFE7D6] border-b border-[#A9895F]">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
+            <a href="#" class="text-xl font-semibold" style="font-family: 'Fraunces', serif;">
+                Fio <span class="text-[#9A3324]">&amp;</span> Prensa
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm">
+                <a href="#oficio" class="hover:text-[#9A3324] transition">Sobre</a>
+                <a href="#servicos" class="hover:text-[#9A3324] transition">Serviços</a>
+                <a href="#pecas" class="hover:text-[#9A3324] transition">Galeria</a>
+                <a href="#contato" class="hover:text-[#9A3324] transition">Contato</a>
+            </nav>
+
+            <button class="bg-[#1B4332] text-white text-sm px-4 py-2 rounded hover:bg-[#143326] transition">
+                Agendar visita
+            </button>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6" style="font-family: 'Fraunces', serif;">
+                Histórias costuradas à mão, feitas para durar.
+            </h1>
+
+            <p class="text-[#5c5545] mb-8 max-w-md">
+                Criamos cadernos, livros e álbuns com encadernação artesanal.
+                Cada detalhe é feito com cuidado, unindo técnicas tradicionais,
+                materiais selecionados e o valor de guardar boas histórias.
+            </p>
+
+            <a href="#servicos" class="inline-block border border-[#1B4332] text-[#1B4332] text-sm px-5 py-2 rounded hover:bg-[#1B4332] hover:text-white transition">
+                Ver serviços
+            </a>
+        </div>
+
+        <div class="border border-[#A9895F] rounded-lg divide-y divide-[#A9895F]">
+            <div class="flex items-start gap-4 p-5">
+                <span class="w-6 h-6 rounded-sm bg-[#9A3324] mt-1 shrink-0"></span>
+                <div>
+                    <p class="font-semibold">Encadernação em tecido</p>
+                    <p class="text-sm text-[#8a8270]">Acabamento artesanal e resistente</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5">
+                <span class="w-6 h-6 rounded-sm bg-[#1B4332] mt-1 shrink-0"></span>
+                <div>
+                    <p class="font-semibold">Cadernos personalizados</p>
+                    <p class="text-sm text-[#8a8270]">Feitos para suas ideias e histórias</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5">
+                <span class="w-6 h-6 rounded-sm bg-[#A9895F] mt-1 shrink-0"></span>
+                <div>
+                    <p class="font-semibold">Papéis especiais</p>
+                    <p class="text-sm text-[#8a8270]">Texturas e padrões selecionados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#E5D9C3]" id="oficio">
+        <div class="max-w-6xl mx-auto px-6 py-16">
+            <h2 class="text-2xl font-bold mb-2" style="font-family: 'Fraunces', serif;">
+                O ofício, em quatro etapas
+            </h2>
+
+            <p class="text-[#5c5545] mb-10 max-w-xl">
+                Cada peça é produzida manualmente, desde a preparação das folhas
+                até o acabamento final, respeitando o tempo de cada processo.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#A9895F]">
+                <div class="md:pr-6 pb-6 md:pb-0">
+                    <p class="text-[#9A3324] text-xl font-semibold mb-2" style="font-family: 'Fraunces', serif;">01</p>
+                    <p class="font-semibold mb-2">Dobra</p>
+                    <p class="text-sm text-[#5c5545]">
+                        As folhas são dobradas e organizadas para formar os cadernos.
+                    </p>
+                </div>
+
+                <div class="md:px-6 py-6 md:py-0">
+                    <p class="text-[#9A3324] text-xl font-semibold mb-2" style="font-family: 'Fraunces', serif;">02</p>
+                    <p class="font-semibold mb-2">Costura</p>
+                    <p class="text-sm text-[#5c5545]">
+                        Os cadernos são unidos à mão com fios resistentes e delicados.
+                    </p>
+                </div>
+
+                <div class="md:px-6 py-6 md:py-0">
+                    <p class="text-[#9A3324] text-xl font-semibold mb-2" style="font-family: 'Fraunces', serif;">03</p>
+                    <p class="font-semibold mb-2">Montagem</p>
+                    <p class="text-sm text-[#5c5545]">
+                        As páginas recebem a estrutura que dará forma ao livro.
+                    </p>
+                </div>
+
+                <div class="md:pl-6 pt-6 md:pt-0">
+                    <p class="text-[#9A3324] text-xl font-semibold mb-2" style="font-family: 'Fraunces', serif;">04</p>
+                    <p class="font-semibold mb-2">Acabamento</p>
+                    <p class="text-sm text-[#5c5545]">
+                        A capa e os últimos detalhes deixam cada peça pronta para durar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16" id="pecas">
+        <h2 class="text-2xl font-bold mb-8" style="font-family: 'Fraunces', serif;">
+            Peças feitas no ateliê
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] md:grid-rows-2 gap-4">
+            <div class="relative rounded-md overflow-hidden md:row-span-2 min-h-[220px] bg-gradient-to-br from-[#1B4332] to-[#52745D]">
+                <span class="absolute bottom-3 left-3 text-[11px] tracking-wide uppercase text-white">
+                    Caderno artesanal
+                </span>
+            </div>
+
+            <div class="relative rounded-md overflow-hidden min-h-[100px] bg-gradient-to-br from-[#9A3324] to-[#C4775F]">
+                <span class="absolute bottom-3 left-3 text-[10px] tracking-wide uppercase text-white">
+                    Livro restaurado
+                </span>
+            </div>
+
+            <div class="relative rounded-md overflow-hidden min-h-[100px] bg-gradient-to-br from-[#A9895F] to-[#D4BD96]">
+                <span class="absolute bottom-3 left-3 text-[10px] tracking-wide uppercase text-white">
+                    Álbum personalizado
+                </span>
+            </div>
+
+            <div class="relative rounded-md overflow-hidden md:col-span-2 min-h-[100px] bg-[#A9895F]">
+                <span class="absolute bottom-3 left-3 text-[10px] tracking-wide uppercase text-white">
+                    Coleção de edição limitada
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-[#A9895F]">
+        <div class="max-w-6xl mx-auto px-6 py-14">
+            <div class="border-l-2 border-[#9A3324] pl-6 max-w-2xl">
+                <p class="italic text-lg md:text-xl leading-relaxed mb-4" style="font-family: 'Fraunces', serif;">
+                    "Meu caderno ficou exatamente como imaginei.
+                    É bonito, resistente e tem um cuidado nos detalhes
+                    que não encontramos em produtos comuns."
+                </p>
+
+                <p class="text-sm">
+                    <span class="font-semibold">Mariana Costa</span>
+                    <span class="text-[#8a8270]"> — cliente do ateliê</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1B4332] text-[#EFE7D6]" id="contato">
+        <div class="max-w-6xl mx-auto px-6 py-14">
+            <h3 class="text-xl font-semibold mb-8" style="font-family: 'Fraunces', serif;">
+                Visite o ateliê
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <p class="text-[10px] tracking-wide uppercase text-white/60 mb-2">Endereço</p>
+                    <p>Rua dos Encadernadores, 214 — Lapa, São Paulo</p>
+                </div>
+
+                <div>
+                    <p class="text-[10px] tracking-wide uppercase text-white/60 mb-2">Horário</p>
+                    <p>Terça a sábado, 10h às 18h</p>
+                </div>
+
+                <div>
+                    <p class="text-[10px] tracking-wide uppercase text-white/60 mb-2">Contato</p>
+                    <p>contato@fioeprensa.com.br</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
