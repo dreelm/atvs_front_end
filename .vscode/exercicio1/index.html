@@ -3,187 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>exercicio</title>
+    <title>NovaCore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b2921;">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Grão<span class="fw-normal">Nobre</span></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Abrir menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn" style="background-color: #d6a15d; border-color: #d6a15d; color: #2f2119;" href="#faq">Comprar Agora</a>
-                    </li>
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <span class="logo__icone"></span>
+                NovaCore
+            </div>
+            <nav class="nav">
+                <ul class="nav__lista">
+                    <li><a href="#servicos">Soluções</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#depoimentos">Clientes</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center gy-4">
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold mb-3">Café de origem, torrado com propósito.</h1>
-                    <p class="text-secondary fs-5">
-                        A Grão Nobre trabalha direto com pequenos produtores para levar
-                        até você grãos especiais, torrados em lotes pequenos toda semana.
-                    </p>
-                    <a href="#depoimentos" class="btn mt-2" style="background-color: #d6a15d; border-color: #d6a15d; color: #2f2119;">Conheça nossos cafés</a>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="ratio ratio-4x3 rounded-4 overflow-hidden">
-                        <div class="d-flex align-items-center justify-content-center text-uppercase small" style="background-color: #ead8c2; color: #80634b; min-height: 300px; width: 100%;">
-                            Imagem do café
-                        </div>
-                    </div>
-                </div>
+    <main>
+        <section class="comeco" id="comeco">
+            <div class="comeco__container">
+                <h1 class="comeco__titulo">Tecnologia para acelerar ideias, equipes e negócios</h1>
+                <p class="comeco__texto">Soluções digitais sob medida para empresas que querem inovar com agilidade, clareza e eficiência.</p>
+                <a href="#contato" class="botao">QUERO CONHECER</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-5" id="depoimentos" style="background-color: #f7f1e9;">
-        <div class="container text-center" style="max-width: 700px;">
-            <p class="fw-semibold small text-uppercase mb-1" style="color: #b7793f;">Quem já experimentou</p>
-            <h2 class="fw-bold mb-4">O que dizem nossos clientes</h2>
+        <section class="servicos" id="servicos">
+            <div class="servicos__container-externo">
 
-            <div id="carrosselDepoimentos" class="carousel slide">
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <p class="fs-5 mb-2" style="color: #c58b43;">★★★★★</p>
-                        <p class="fst-italic fs-5">"O café tem um aroma muito bom e chega bem embalado. Gostei bastante!"</p>
-                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
-                            <div class="bg-secondary rounded-circle" style="width: 40px; height: 40px;"></div>
-                            <div class="text-start">
-                                <p class="fw-semibold mb-0 small">Marina Alves</p>
-                                <p class="text-secondary mb-0" style="font-size: 12px;">Assinante desde 2023</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <p class="fs-5 mb-2" style="color: #c58b43;">★★★★★</p>
-                        <p class="fst-italic fs-5">"Sempre descubro sabores novos a cada pacote. Dá para perceber o cuidado na escolha dos grãos."</p>
-                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
-                            <div class="bg-secondary rounded-circle" style="width: 40px; height: 40px;"></div>
-                            <div class="text-start">
-                                <p class="fw-semibold mb-0 small">Rafael Souza</p>
-                                <p class="text-secondary mb-0" style="font-size: 12px;">Assinante desde 2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <p class="fs-5 mb-2" style="color: #c58b43;">★★★★★</p>
-                        <p class="fst-italic fs-5">"Fui bem atendida e meu pedido chegou certinho. Com certeza vou comprar novamente."</p>
-                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
-                            <div class="bg-secondary rounded-circle" style="width: 40px; height: 40px;"></div>
-                            <div class="text-start">
-                                <p class="fw-semibold mb-0 small">Juliana Prado</p>
-                                <p class="text-secondary mb-0" style="font-size: 12px;">Assinante desde 2022</p>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="servicos__cabecalho">
+                    <h3 class="servicos__subtitulo">NOSSO TRABALHO</h3>
+                    <h2 class="servicos__titulo">Serviços</h2>
+                    <p class="servicos__paragrafo">A NovaCore combina estratégia, design e desenvolvimento para criar soluções digitais que simplificam processos e fazem negócios evoluírem.</p>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDepoimentos"
-                    data-bs-slide="prev" style="width: 5%;">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carrosselDepoimentos"
-                    data-bs-slide="next" style="width: 5%;">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                </button>
+                <div class="servicos__container">
+                    <article class="servicos__card">
+                        <h3>DESENVOLVIMENTO WEB</h3>
+                        <p class="servicos__card__texto">Sites, portais e plataformas modernas com foco em performance, usabilidade e escalabilidade.</p>
+                    </article>
 
-                <div class="carousel-indicators position-relative mt-3">
-                    <button type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Depoimento 1"></button>
-                    <button type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide-to="1"
-                        aria-label="Depoimento 2"></button>
-                    <button type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide-to="2"
-                        aria-label="Depoimento 3"></button>
+                    <article class="servicos__card">
+                        <h3>APLICAÇÕES MOBILE</h3>
+                        <p class="servicos__card__texto">Experiências mobile intuitivas para aproximar empresas e usuários em diferentes jornadas digitais.</p>
+                    </article>
+
+                    <article class="servicos__card">
+                        <h3>AUTOMAÇÃO DE PROCESSOS</h3>
+                        <p class="servicos__card__texto">Fluxos mais eficientes para reduzir tarefas manuais e acelerar a produtividade das equipes.</p>
+                    </article>
+
+                    <article class="servicos__card">
+                        <h3>INTEGRAÇÕES DE SISTEMAS</h3>
+                        <p class="servicos__card__texto">Conexão entre ferramentas, APIs e plataformas para centralizar operações e informações.</p>
+                    </article>
+
+                    <article class="servicos__card">
+                        <h3>DADOS E ANALYTICS</h3>
+                        <p class="servicos__card__texto">Dashboards e análises sob medida para transformar dados em decisões mais inteligentes.</p>
+                    </article>
+
+                    <article class="servicos__card">
+                        <h3>UX E INTERFACE</h3>
+                        <p class="servicos__card__texto">Interfaces claras, funcionais e coerentes para melhorar a experiência dos produtos digitais.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-5" id="faq">
-        <div class="container" style="max-width: 700px;">
-            <h2 class="fw-bold text-center mb-4">Perguntas frequentes</h2>
+        <section class="sobre" id="sobre">
+            <div class="sobre__container-externo">
 
-            <div class="accordion" id="acordeaoFaq">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq1">
-                            Como devo armazenar o café depois de aberto?
-                        </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#acordeaoFaq">
-                        <div class="accordion-body">
-                            Guarde o café em uma embalagem bem fechada, em um local seco e longe da luz e do calor
-                            para ajudar a preservar o aroma e o sabor.
-                        </div>
-                    </div>
+                <div class="sobre__cabecalho">
+                    <h3 class="sobre__subtitulo">NOVACORE</h3>
+                    <h2 class="sobre__titulo">Sobre nós</h2>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" style="background-color: #f2e5d5; color: #3b2921;" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq2">
-                            Quais tipos de café vocês oferecem?
-                        </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#acordeaoFaq">
-                        <div class="accordion-body">
-                            Trabalhamos com cafés especiais de pequenos produtores. As opções podem variar conforme
-                            os grãos selecionados e os lotes disponíveis.
-                        </div>
+                <div class="sobre__container">
+                    <div class="sobre__texto-bloco">
+                        <h3 class="sobre__destaque">ATUAÇÃO EM DIFERENTES MERCADOS E SOLUÇÕES DIGITAIS</h3>
+                        <p class="sobre__texto">Somos uma empresa de tecnologia focada em desenvolver soluções digitais sob medida para negócios que buscam inovação com consistência. Atuamos em diferentes mercados, criando produtos, melhorando processos e impulsionando a evolução tecnológica.</p>
+                        <p class="sobre__texto">Nossa trajetória é marcada pela colaboração entre estratégia, design e desenvolvimento. Com uma equipe multidisciplinar, entregamos soluções personalizadas para diferentes necessidades e objetivos.</p>
                     </div>
-                </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq3">
-                            Como posso preparar um bom café?
-                        </button>
-                    </h2>
-                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#acordeaoFaq">
-                        <div class="accordion-body">
-                            Use água filtrada e escolha a moagem adequada ao seu método de preparo. Ajuste a
-                            quantidade de café e água ao seu gosto para encontrar o sabor ideal para você.
-                        </div>
+                    <div class="sobre__imagem">
+                        <img src="./imagens/imagem1.png" alt="Ilustração roxa com círculos">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="text-white text-center py-3" style="background-color: #3b2921;">
-        <p class="mb-0 small">© 2026 Grão Nobre. Marca fictícia criada para fins didáticos.</p>
+        <section class="depoimentos" id="depoimentos">
+            <div class="depoimentos__container-externo">
+
+                <div class="depoimentos__cabecalho">
+                    <h3 class="depoimentos__subtitulo">NOSSOS CLIENTES</h3>
+                    <h2 class="depoimentos__titulo">Depoimentos</h2>
+                </div>
+
+                <div class="depoimentos__container">
+                    <article class="depoimentos__card">
+                        <img src="./imagens/imagem2.png" alt="Foto de Ana Beatriz Silva" class="depoimentos__foto">
+                        <p class="depoimentos__card__texto">"A parceria trouxe mais clareza para nossos processos e acelerou a entrega de um produto que estava parado há meses."</p>
+                        <h3 class="depoimentos__card__titulo">Ana Beatriz Silva</h3>
+                    </article>
+
+                    <article class="depoimentos__card">
+                        <img src="./imagens/imagem2.png" alt="Foto de Carlos Eduardo Lima" class="depoimentos__foto">
+                        <p class="depoimentos__card__texto">"O time entendeu nossa necessidade e conseguiu criar uma experiência muito mais fluida para os usuários."</p>
+                        <h3 class="depoimentos__card__titulo">Carlos Eduardo Lima</h3>
+                    </article>
+
+                    <article class="depoimentos__card">
+                        <img src="./imagens/imagem2.png" alt="Foto de Fernanda Rocha" class="depoimentos__foto">
+                        <p class="depoimentos__card__texto">"Conseguimos reduzir retrabalho e melhorar nossa operação com soluções simples e bem pensadas."</p>
+                        <h3 class="depoimentos__card__titulo">Fernanda Rocha</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="contato__container-externo">
+
+                <div class="contato__cabecalho">
+                    <h3 class="contato__subtitulo">FALE COM A GENTE</h3>
+                    <h2 class="contato__titulo">Contato</h2>
+                </div>
+
+                <div class="contato__container">
+                    <div class="contato__imagem">
+                        <img src="./imagens/imagem1.png" alt="Ilustração roxa com círculos">
+                    </div>
+
+                    <div class="contato__card">
+                        <h3 class="contato__card__titulo">Conheça melhor nossas soluções</h3>
+                        <p class="contato__card__texto">Preencha o formulário para falar com nosso time.</p>
+
+                        <form class="contato__form">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome">
+
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email">
+
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                            <button type="submit" class="botao">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <span class="logo__icone"></span>
+                NovaCore
+            </div>
+
+            <div class="footer__colunas">
+                <div class="footer__coluna">
+                    <h4>A EMPRESA</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#servicos">Soluções</a></li>
+                        <li><a href="#contato">Trabalhe conosco</a></li>
+                        <li><a href="#comeco">Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__coluna">
+                    <h4>CONTATO</h4>
+                    <ul>
+                        <li>+55 11 0000-0000</li>
+                        <li>contato@novacore.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer__coluna">
+                    <h4>ONDE ESTAMOS</h4>
+                    <ul>
+                        <li>Av. Paulista, 1000</li>
+                        <li>Bela Vista — São Paulo, SP</li>
+                        <li>01310-100</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__creditos">© 2026 NovaCore. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
